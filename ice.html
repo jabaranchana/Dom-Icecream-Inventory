@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IceCream Inventory</title>
+    <style>
+            body { font-family: Arial, sans-serif; max-width: 800px; margin: 0px auto; padding: 0px;height:100vh; background-size:cover ;background-image: url('ice.jpg');}
+        h1{color: rgb(229, 93, 115);}
+        input, button { padding: 40px; font-size: 18px; margin: 10px 0; }
+        .ice-cream-list { list-style: none; padding: 0; }
+        .ice-cream-item { background: rgb(237, 116, 172); padding: 10px; margin-bottom: 5px; border-radius: 5px; }
+        .total-value { margin-top: 50px; font-weight: bolder; }
+    </style>
+</head>
+<body>
+    <h1>Ice Cream Inventory</h1>
+    <input type="text" id="flavor" placeholder="Flavor">
+    <input type="number" id="price" placeholder="Price">
+    <input type="number" id="quantity" placeholder="Quantity">
+    <button id="add-ice-cream">Add Ice Cream</button>
+    <ul id="ice-cream-list" class="ice-cream-list"></ul>
+    <div class="total-value">Total Value: ₹<span id="total-value">0</span></div>
+
+    <script src="ice.js"></script>
+</body>
+</html>
